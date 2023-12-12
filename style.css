@@ -1,0 +1,333 @@
+body { 
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  transition: font-size 1s ease;
+}
+
+h1:hover{
+  font-size: 40px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  /* cursor: text; */
+}
+
+nav {
+  background: transparent;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 20px
+}
+
+nav a {
+  text-decoration: none;
+  color: #852020;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #ccc;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+
+}
+
+.search-icon {
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.search-input {
+  width: 0;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s, opacity 0.4s;
+  background-color: #fff;
+  color: #333;
+  padding: 5px;
+}
+
+.search-container:hover .search-icon{
+  transform: scale(1.1);
+}
+
+.search-container:hover .search-input{
+  width: 250px;
+  opacity: 1;
+}
+
+main {
+  margin: 0 auto;
+  padding: 20px;
+  --shadow-active: 0 5px 5px 0 #00000026;
+  position: relative;
+  cursor: default;
+  opacity: .9;
+  margin: 20px;
+  padding: 1.5rem;
+  font-weight: 600;
+  background: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 0 #00000026;
+  transition: .2s ease all;
+  
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+  transition: 0.5s linear;
+}
+
+main:hover {
+  box-shadow: 5px 10px 10px 5px #00000026;
+}
+
+input {
+  width: 70%;
+}
+
+input[type=checkbox] {
+  width: auto;
+  
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+
+}
+
+input, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+li {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+img {
+  border-radius: 20px;
+}
+
+.img-titulo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 20px 0 20px;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-container * {
+  margin: 5px;
+}
+
+.tasks-list-ul{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+.tasks-list-ul li{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasks-list-ul .completed {
+  text-decoration: line-through;
+  color: #949494;
+}
+
+/* .increasePositionTask {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 40px solid #ccc;
+  border-radius: 10px 10px 0 0;
+} */
+/* .increasePositionTask {
+  position: relative;
+  overflow: hidden;
+  transform: translateY(10%) rotate(90deg) skewY(30deg) scaleX(0.866);
+  border-radius: 20%;
+  cursor: pointer;
+}
+.increasePositionTask, .increasePositionTask::before, .increasePositionTask::after {
+  width: 10px;
+  height: 10px;
+}
+.increasePositionTask::before, .increasePositionTask::after {
+  content: '';
+  position: absolute;
+  background: gray;
+  pointer-events: auto;
+}
+.increasePositionTask::before {
+  transform: scaleX(0) skewY(-30deg) rotate(-0deg) translateY(-42.3%) skewX(30deg) scaleY(1) translateX(-24%);
+}
+.increasePositionTask::after {
+  transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-49.3%) skewX(-30deg) scaleY(0.866) translateX(24%);
+}
+.increasePositionTask::before {
+  border-radius: 20% 20% 20% 5%;
+}
+.increasePositionTask::after {
+  border-radius: 20% 20% 55% 20%;
+} */
+
+/* .decreasePositionTask {
+  width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 40px solid #ccc;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+} */
+
+/* .decreasePositionTask {
+  position: relative;
+  overflow: hidden;
+  transform: translateY(50%) rotate(30deg) skewY(30deg) scaleX(0.866);
+  pointer-events: none;
+  border-radius: 20%;
+  cursor: pointer;
+}
+.decreasePositionTask, .decreasePositionTask::before, .decreasePositionTask::after {
+  width: 10px;
+  height: 10px;
+}
+.decreasePositionTask::before, .decreasePositionTask::after {
+  content: '';
+  position: absolute;
+  background: gray;
+}
+.decreasePositionTask::before {
+  transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%) skewX(30deg) scaleY(0.866) translateX(-24%);
+}
+.decreasePositionTask::after {
+  transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%) skewX(-30deg) scaleY(0.866) translateX(24%);
+}
+.decreasePositionTask::before {
+  border-radius: 20% 20% 20% 55%;
+}
+.decreasePositionTask::after {
+  border-radius: 20% 20% 55% 20%;
+}
+
+.disableIncreasePositionTask {
+  
+}
+
+.disableDecreasePositionTask {
+  
+} */
+
+.delete-button {
+  background-color: #ff5d58;
+  border: 1px solid #ff5d58;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  background-color: white;
+  border: 1px solid #ff5d58;
+  color: #ff5d58;
+}
+
+.grafico-container {
+  /* display: none; */
+  width: 100%;
+  height: 40rem;
+}
+
+.error-container {
+  color:#555;
+  border-radius:10px;
+  font-family:Tahoma,Geneva,Arial,sans-serif;
+  font-size:11px;
+  padding:10px 10px 10px 10px;
+  margin:10px;
+  background:#ffecec;
+  border:1px solid #f5aca6;
+}
+
+.error-container span {
+  margin: 5px 0;
+}

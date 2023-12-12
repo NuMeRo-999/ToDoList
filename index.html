@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <nav>
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input class="search-input" type="text" placeholder="Buscar una tarea...">
+      </div>
+      <ul>
+        <li><a href="#grafico" class="mostrar-grafico-link">Mostrar Gráfico</a></li>
+        <li><a href="#" class="generar-evento-calendario-link">Generar Evento Calendario</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="task-list-section">
+        <div class="img-titulo">
+          <img src="https://s3.amazonaws.com/ft-docs/en/to-do-list-2.jpg" alt="">
+          <h1 class="titulo">ToDo List</h1>
+        </div>
+        <div class="form-container">
+          <div class="form-input">
+            <!-- input para introducir la tarea -->
+            <input type="text" id="new-task-input" placeholder="Introduzca la tarea">
+            <!-- Btn insertar tarea -->
+            <button type="submit" class="add-task-btn" disabled >Añadir Tarea</button>
+          </div>
+        </div>
+        <!-- Lista de tareas -->
+        <ul class="tasks-list-ul sortable-list"></ul>
+        <!-- Sección que agrupa el gráfico -->
+        <section id="grafico" class="grafico-container"></section>
+      </section>
+    </main>    
+    <div class="container"></div>
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+  </body>
+</html>
